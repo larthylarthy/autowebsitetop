@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import PartnersCarousel from "@/components/home/PartnersCarousel";
@@ -32,7 +31,7 @@ const Index = () => {
         <FadeInSection>
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 gradient-text leading-tight">
-              The best automatic website builder, completely free from day 1
+              Build websites - Generate images - Free forever...
             </h1>
             <p className="text-lg md:text-xl text-autowebsite-text-secondary mb-8 max-w-3xl mx-auto">
               Create beautiful, responsive websites in minutes with our AI-powered tools. 
@@ -60,7 +59,7 @@ const Index = () => {
             {[
               {
                 title: "AI-Powered Website Builder",
-                description: "Just describe what you want, and our AI creates a complete website tailored to your needs.",
+                description: "Just drag and drop to build your perfect website, our builder will take your designs and turn them into responsive HTML & CSS code to be exported and used however you see fit",
                 icon: "💬",
               },
               {
@@ -100,16 +99,16 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "1. Describe Your Website",
-                description: "Tell our AI what kind of website you need, including style, purpose, and content.",
+                title: "1. Build your website",
+                description: "Drag, drop and draw whatever you want on our blank canvas, our builder will convert your designs into functional web code.",
               },
               {
                 title: "2. Generate & Customize",
                 description: "Review the generated website and make adjustments or generate images as needed.",
               },
               {
-                title: "3. Publish Instantly",
-                description: "Launch your new website with one click - no technical knowledge required.",
+                title: "3. Export Easily",
+                description: "Our code viewer and exporter allows you to easily export your code for use anywhere you see fit!",
               },
             ].map((step, index) => (
               <FadeInSection delay={index * 0.2} key={index}>
@@ -123,20 +122,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 md:px-12 lg:px-24 text-center">
-        <FadeInSection>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to create your website?</h2>
-            <p className="text-lg text-autowebsite-text-secondary mb-8">
-              Join thousands of users who have already built beautiful websites with Autowebsite.org. 
-              No credit card required, no strings attached.
-            </p>
-            <Button asChild size="lg" className="bg-autowebsite-accent button-hover">
-              <Link to="/website-builder">Get Started Now</Link>
-            </Button>
-          </div>
-        </FadeInSection>
+      {/* $AUTO Token Section (moved and enlarged) */}
+      <section className="py-24 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-autowebsite-accent/10 to-white dark:from-autowebsite-accent/20 dark:to-gray-900">
+        <div className="max-w-4xl mx-auto text-center bg-card rounded-3xl shadow-2xl p-16 flex flex-col items-center">
+          <h2 className="text-5xl md:text-6xl font-extrabold mb-6 text-autowebsite-accent">$AUTO</h2>
+          <p className="text-2xl font-semibold mb-4">Our own cryptocurrency token</p>
+          <p className="text-lg md:text-xl text-autowebsite-text-secondary mb-10 max-w-2xl">
+            As AutoWebsite is completely free, we have decided to release our own token on Pumpfun to support our project and allow us to continue development, check us out here!
+          </p>
+          <Button asChild className="bg-autowebsite-accent text-2xl px-12 py-6 rounded-full button-hover shadow-lg">
+            <a href="#" target="_blank" rel="noopener noreferrer">Buy $AUTO</a>
+          </Button>
+        </div>
       </section>
 
       {/* Footer */}

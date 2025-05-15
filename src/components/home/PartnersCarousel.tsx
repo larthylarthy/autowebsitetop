@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { 
   Carousel, 
@@ -17,54 +16,29 @@ type Partner = {
 
 const partners: Partner[] = [
   {
-    name: "TechFuture Inc.",
-    description: "Leading AI innovation for enterprise solutions.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    name: "Helius",
+    description: "Our friends over at Helius have assisted us hugely with their RPC nodes, APIs, webhooks and anything dev related!",
+    image: "/partners/helius.png",
   },
   {
-    name: "WebMakers Studio",
-    description: "Expert web development and design services.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    name: "GrapesJS",
+    description: "GrapesJS is the premier javascript website builder, they've kindly let us integrate them into our development suite!",
+    image: "/partners/grapesjs.png",
   },
   {
-    name: "Creative Vision",
-    description: "Transforming ideas into visual masterpieces.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+    name: "PumpFun",
+    description: "PumpFun needs no introduction, they are our launch partners and will create our token!",
+    image: "/partners/pumpfun.png",
   },
   {
-    name: "Digital Nomads Co.",
-    description: "Remote work solutions for the modern workforce.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+    name: "Cloudflare",
+    description: "Strengthening our domain and ensuring all of our API queries are successfully passed.",
+    image: "/partners/cloudflare.png",
   },
   {
-    name: "Cloud Edge",
-    description: "Enterprise-grade cloud infrastructure services.",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-  },
-  {
-    name: "DataViz Pro",
-    description: "Data visualization tools for complex analytics.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-  },
-  {
-    name: "CodeCraft Labs",
-    description: "Custom software development for startups.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-  },
-  {
-    name: "SmartSys Technologies",
-    description: "Intelligent automation systems for businesses.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-  },
-  {
-    name: "UX Innovate",
-    description: "User experience research and design consultancy.",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
-  },
-  {
-    name: "DevOps Solutions",
-    description: "Streamlining development and operations workflows.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    name: "Dall-e",
+    description: "By using Dall-e's amazing API we are able to generate amazing images for you to use in your websites!",
+    image: "/partners/dalle.png",
   },
 ];
 

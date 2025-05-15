@@ -38,11 +38,11 @@ const ImageGenerator = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${import.meta.env.VITE_CLOUDFLARE_API_TOKEN}`,
         },
         body: JSON.stringify({
           prompt: prompt,
           account_id: import.meta.env.VITE_CLOUDFLARE_ACCOUNT_ID,
+          token: import.meta.env.VITE_CLOUDFLARE_API_TOKEN
         })
       });
       
@@ -94,8 +94,8 @@ const ImageGenerator = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="bg-autowebsite-light-purple dark:bg-gray-800 px-6 py-4 border-b">
-        <h1 className="text-2xl font-bold dark:text-white">Image Generator</h1>
+      <div className="bg-autowebsite-light-purple dark:bg-gray-800 px-6 py-3 border-b">
+        <h1 className="text-xl font-bold text-autowebsite-text-primary dark:text-white">Image Generator</h1>
         <p className="text-autowebsite-text-secondary dark:text-gray-300">
           Create unique images for your website using AI
         </p>

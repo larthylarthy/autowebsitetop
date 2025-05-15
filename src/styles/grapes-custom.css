@@ -1,0 +1,138 @@
+
+/* Custom styling for GrapesJS editor to integrate with our application */
+.gjs-blocks-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.gjs-block {
+  width: calc(100% - 8px);
+  margin: 4px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.gjs-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gjs-block-label {
+  font-size: 0.8rem;
+}
+
+/* Ensure custom styling for blocks */
+.gjs-block-section {
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Style toolbar buttons */
+.gjs-pn-btn {
+  border-radius: 4px;
+  padding: 6px;
+  margin: 2px;
+}
+
+/* Better styling for selected items */
+.gjs-selected {
+  outline: 2px solid #8b5cf6 !important;
+  outline-offset: 2px;
+}
+
+/* Improve code editor view */
+.gjs-code-editor {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Improve property panels */
+.gjs-sm-sector {
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.gjs-sm-sector-title {
+  font-weight: 600;
+  padding: 10px;
+}
+
+/* Fix container height issues */
+.gjs-editor, .gjs-cv-canvas {
+  height: 100% !important;
+}
+
+/* Ensure proper drag handle display */
+.gjs-resizer-h {
+  border-color: #8b5cf6;
+}
+
+/* Make selected component more visible */
+.gjs-selected {
+  outline: 2px solid #8b5cf6 !important;
+}
+
+/* Improve block appearance */
+.gjs-block {
+  padding: 10px;
+}
+
+/* Ensure scrollable areas */
+.blocks-container, 
+.properties-container {
+  height: calc(100vh - 14rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling for light mode */
+:root {
+  --scrollbar-thumb: #C8C8C9;
+  --scrollbar-track: #F1F1F1;
+  --scrollbar-thumb-hover: #9F9EA1;
+}
+
+/* Custom scrollbar styling for dark mode */
+.dark {
+  --scrollbar-thumb: #333333;
+  --scrollbar-track: #222222;
+  --scrollbar-thumb-hover: #555555;
+}
+
+/* Webkit scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* GrapesJS specific scrollbars */
+.gjs-editor ::-webkit-scrollbar,
+.gjs-sm-sectors ::-webkit-scrollbar,
+.gjs-blocks-cs ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
